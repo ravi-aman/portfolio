@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7fe4429f67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img id="logo" src="images/Rk-white.png"  alt="logo"></a>
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-xmark" onclick="closemenu()">X</i> 
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Hi , I'm <span>Ravikant</span><br> <span>Tiwari</span></h1>
+        <p>A software Developer</p>
+        <div class="social-icon">
+          <a href="https://www.instagram.com/tiwariravikant04/"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/ravi-aman"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ravikant-tiwari-261079201"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img id="image" src="images/rk-small.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p id="para" style="font-family: 'Rubik', sans-serif; font-size:16px ;">"Hello everyone, I'm Ravikant Tiwari, a 1st-year CSE student at MSIT. I bring a versatile skill set to the table, including the ability to create compelling presentations and designs. With a solid foundation in HTML, CSS, JavaScript, and Firebase, I have experience as a frontend web developer and a creative designer. I'm also business-savvy, having been part of one of Delhi's top 50 teams out of 51,000 students in the government's Business Blaster program, where I assisted young entrepreneurs in securing investment for their companies. Additionally, I have a penchant for crafting deep and meaningful poetry. My passion lies in computer-related topics, spanning web development, design, and the exciting realm of artificial intelligence."</p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Html ,CSS , Javascipt</li>
+              <li><span>Python</span><br>Build Projects</li>
+              <li><span>C++</span><br>Basic</li>
+              <li><span>Tool</span><br>Git & Github</li>
+              <li><span>Desining </span><br>Photoshop and Canva proficent</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>B.Tech in CSE </span><br>Maharaja surajmal Instute of Technology</li>
+              <li><span>12th ( 90% )</span><br>R.P.V.V. HARI NAGAR</li>
+              <li><span>10th ( 86% )</span><br>G.B.S.S. SCHOOL</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="experiance">
+            <ul>
+              <li><span>Freelancing</span><br>made diffrent design and logo for client</li>
+              <li><span>Web Development</span><br>made a website frountend for Company</li>
+              <li><span>start Up</span><br>selected in top 50 team over 51 thousand student and got funding in Bussiness Blaster Progrsm ran by Delhi Government </li>
+
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="my-projects-list">
+      <div  class="pro-dis" >
+        <img src="images/web screenshot croped.png"  height="200px" alt="">
+        <div class="dis">
+          <h2>Web Desining</h2>
+          <p>I created a visually appealing and functional frontend webpage using a combination of HTML, CSS, and JavaScript to showcase the work and values of my organization. To explore further and experience the interface, please click the<a style="color: red; font-size: 17px;" href="https://worldfinanceindia.web.app/"> link </a></p>
+          <a class="btn" href="#contact">Know more</a>
+        </div>
+      </div>
+      <div class="pro-dis">
+        <img src="images/design cover.png"   alt="">
+        <div class="dis">
+          <h2>Desining</h2>
+          <p>I've had created extensive array of exceptionally creative and breathtaking posters, templates, and flyers by harnessing the capabilities of both Canva and Photoshop.</p>
+          <a class="btn" href="#contact">Know more</a>
+        </div>
+      </div>
+      <div class="pro-dis">
+        <img src="images/python cover.png"    alt="">
+        <div class="dis">
+          <h2>Python</h2>
+          <p>I have developed a Python-based Happy Birthday greeting card generator, complete with libraries for image generation and the option to personalize the card by adding the recipient's name. Simply input the name of the person you'd like to send your wishes to, and this program will automatically generate a beautifully designed greeting card for you.</p>
+          <a class="btn" href="#contact">Know more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact</h1>
+        <p><i class="fas pad fa-envelope"></i>ravikanttiwari488@gmail.com</p>
+        <p><i class="fas pad fa-phone"></i>8744883594</p>
+        <div class="social-icon">
+          <a href="https://www.instagram.com/tiwariravikant04/"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/ravi-aman"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ravikant-tiwari-261079201"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="images/newphoto.pdf"   download="" class="cbtn">Downlod CV</a>
+      </div>
+      <div class="contact-right">
+        <form action="#">
+          <input type="text" name="Name" placeholder=" Your Name" required>
+          <input type="text" name="Name" placeholder=" Your Email Id" required>
+          <textarea name="Message" id="text" cols="30" rows="6" placeholder="your Message"></textarea>
+          <button class="cbtn" type="submit">submit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-links");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-links");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+
+</script>
+<script src="https://kit.fontawesome.com/7fe4429f67.js" crossorigin="anonymous"></script>
+
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right="0";
+    
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+</script>
+</body>
+</html>
